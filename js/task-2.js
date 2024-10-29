@@ -24,3 +24,26 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+const galleryList = document.querySelector(`ul.gallery`);
+
+// Використовуємо querySelector для вибору <ul> з класом gallery
+
+// Створюємо окрему функцію для преревірки та додавання HTML з масиву об'єктів картинок
+const createGalleryMarkup = (images) => {
+  if(!Array.isArray(images) || images.length === 0 )
+    {console.error('Invalid images array');
+  return '';
+}
+return images
+.map(({url, alt}) => `
+<li class = "gallery-item">
+ <img src = "${url}" alt = "${alt}">
+</li>`)
+.join('');
+};
+
+const markup = createGalleryMarkup(images);
+
+if(markup){
+  galleryList.insertAdjacentHTML('beforeend', markup);
+}

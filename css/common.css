@@ -76,3 +76,20 @@ ol {
 .option-item:not(:last-child) {
   margin-bottom: 8px;
 }
+
+.gallery {
+  max-width: 1128px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.gallery-item {
+  display: flex;
+  width: calc((100% - 48px) / 3);
+}
+
+
+
