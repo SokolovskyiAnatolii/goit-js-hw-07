@@ -40,6 +40,8 @@ ol {
   padding: 0;
 }
 
+/* Task-1 */
+
 #categories {
   display: flex;
   flex-wrap: wrap;
@@ -77,19 +79,167 @@ ol {
   margin-bottom: 8px;
 }
 
+/* Task-2 */
+
 .gallery {
   max-width: 1128px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 24px;
 }
 
 .gallery-item {
   display: flex;
-  width: calc((100% - 48px) / 3);
+  flex: 1 1 calc((100% - 48px) / 3);
 }
 
+/* Task-3 */
 
+input,
+.login-form-btn {
+  border-radius: 4px;
+  height: 40px;
+}
 
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #2e2f42;
+}
+
+/* Task-4 */
+
+.wrapper,
+.login-form {
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 408px;
+  background-color: #fff;
+}
+
+.wrapper {
+  max-height: 136px;
+}
+
+.login-form {
+  max-height: 256px;
+}
+
+#name-input,
+.login-form input {
+  width: 100%;
+  border: 1px solid #808080;
+  padding-left: 16px;
+  outline: none;
+  color: #2e2f42;
+}
+
+#name-input {
+  margin-bottom: 16px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  margin-top: 8px;
+}
+
+.login-form-btn {
+  font-family: inherit;
+  font-weight: 500;
+  margin-top: 8px;
+  padding: 8px 16px;
+  min-width: 86px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Task-5 */
+
+.widget {
+  text-align: center;
+  border-radius: 8px;
+  padding: 100px 0;
+  max-width: 345px;
+  max-height: 280px;
+  background-color: #fff;
+}
+
+.change-color {
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 148px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #4e75ff;
+  color: #fff;
+}
+
+.change-color:hover {
+  opacity: 0.9;
+}
+
+/* Task-6 */
+#boxes {
+  background-color: #f6f6fe;
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 486px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 486px;
+  margin-bottom: 16px;
+  background-color: #f6f6fe;
+  padding: 32px;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#controls button {
+  font-family: inherit;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 120px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
