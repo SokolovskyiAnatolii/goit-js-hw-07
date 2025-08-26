@@ -127,17 +127,12 @@ h1 {
   max-height: 256px;
 }
 
-#name-input,
 .login-form input {
   width: 100%;
   border: 1px solid #808080;
   padding-left: 16px;
   outline: none;
   color: #2e2f42;
-}
-
-#name-input {
-  margin-bottom: 16px;
 }
 
 .login-form label {
