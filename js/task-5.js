@@ -10,7 +10,7 @@ const color = document.querySelector(".color");
 
 const handleClick = (event) => {
 body.style.backgroundColor =  getRandomHexColor();
-color.textContent = getRandomHexColor() || "Anonymous";
+color.textContent = getRandomHexColor() || "-";
 };
 
 changeСolor.addEventListener("click", handleClick);
